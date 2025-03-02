@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض المنتجات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>منتجاتنا</h1>
+        <p>اكتشف أفضل المنتجات بأفضل الأسعار</p>
+    </header>
+    <div class="categories">
+        <div class="category">تصنيف 1</div>
+        <div class="category">تصنيف 2</div>
+        <div class="category">تصنيف 3</div>
+    </div>
+    <section class="locations" style="display:none;">
+        <h2>اختر الولاية والبلد</h2>
+        <div>
+            <label for="state">الولاية:</label>
+            <select id="state">
+                <option value="riyadh">الرياض</option>
+                <option value="jeddah">جدة</option>
+                <option value="dammam">الدمام</option>
+                <!-- ...أضف المزيد من الولايات -->
+            </select>
+        </div>
+        <div>
+            <label for="country">البلد:</label>
+            <select id="country">
+                <option value="saudi">السعودية</option>
+                <option value="uae">الإمارات</option>
+                <option value="egypt">مصر</option>
+                <!-- ...أضف المزيد من البلدان -->
+            </select>
+        </div>
+    </section>
+    <main>
+        <div class="product" id="product1">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>منتج 1</h2>
+            <p>وصف المنتج 1</p>
+            <button class="buy-button" data-product="منتج 1">شراء</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>منتج 2</h2>
+            <p>وصف المنتج 2</p>
+            <button class="buy-button" data-product="منتج 2">شراء</button>
+        </div>
+        <div class="product" id="product3">
+            <img src="product3.jpg" alt="Product 3">
+            <h2>منتج 3</h2>
+            <p>وصف المنتج 3</p>
+            <button class="buy-button" data-product="منتج 3">شراء</button>
+        </div>
+        <div class="product" id="product4">
+            <img src="product4.jpg" alt="Product 4">
+            <h2>منتج 4</h2>
+            <p>وصف المنتج 4</p>
+            <button class="buy-button" data-product="منتج 4">شراء</button>
+        </div>
+        <div class="product" id="product5">
+            <img src="product5.jpg" alt="Product 5">
+            <h2>منتج 5</h2>
+            <p>وصف المنتج 5</p>
+            <button class="buy-button" data-product="منتج 5">شراء</button>
+        </div>
+        <div class="product" id="product6">
+            <img src="product6.jpg" alt="Product 6">
+            <h2>منتج 6</h2>
+            <p>وصف المنتج 6</p>
+            <button class="buy-button" data-product="منتج 6">شراء</button>
+        </div>
+    </main>
+    <aside>
+        <h2>سلة المشتريات <img src="https://static.vecteezy.com/system/resources/previews/019/787/018/original/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" alt="Cart Icon" class="cart-icon"></h2>
+        <ul id="cart"></ul>
+        <button id="clear-cart">إفراغ السلة</button>
+    </aside>
+    <!-- New Purchase Information Form -->
+    <section class="info-form" style="display:none;">
+        <h2>أدخل معلومات الشراء</h2>
+        <form id="purchase-form">
+            <div>
+                <label for="customer-name">الاسم:</label>
+                <input type="text" id="customer-name" required>
+            </div>
+            <div>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="address">العنوان:</label>
+                <input type="text" id="address" required>
+            </div>
+            <div>
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <button type="submit">تأكيد الشراء</button>
+        </form>
+    </section>
+    <footer>
+        <h2>تواصل معنا</h2>
+        <ul class="social-media">
+            <li><a href="https://www.instagram.com" target="_blank"><img src="https://png.pngtree.com/png-clipart/20221019/original/pngtree-instagram-social-platform-icon-png-image_8704818.png" alt="Instagram" class="social-icon"> إنستغرام</a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.g-PMKXEGdnEU8sBg9_X8uwHaHa&pid=Api&P=0&h=180" alt="Facebook" class="social-icon"> فيسبوك</a></li>
+            <li><a href="tel:+123456789"><img src="https://purepng.com/public/uploads/large/purepng.com-phone-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596098aomr5.png" alt="Phone" class="social-icon"> رقم الهاتف: +123456789</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
